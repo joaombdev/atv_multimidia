@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Agendamento</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="João Alexandre">
+	<meta name="keywords" content="pingpong, tenis de mesa, aulas, esporte, atividades físicas">
+	<meta name="description" content="Aprenda a jogar tênis de mesa de forma leve e alegre">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--imagem banner-->
+	<header>
+		<img title="joão foto" id="topo" class="centro" src="img_antigo/banner1.png" alt="banner do site J.A pong com raquetes de tênis de mesa" width="85%">
+	</header>
+	
+	<!--menu clicavel-->
+	<nav>
+		<div class="centro">
+			<a class="menu" href="index.html">HOME</a>
+			<a class="menu" href="index.html#pag-horarios">HORÁRIOS</a>
+			<a class="menu" href="index.html#pag-materiais">MATERIAIS</a> 
+			<a class="menu" href="index.html#pag-video">VÍDEO</a>
+			<a class="menu" href="agendamento.html" target="_blank">AGENDAMENTO</a>
+		</div>
+	</nav>
+
+	<section id="pag_agendamentos">
+	<h1>Agendamento</h1>
+	<!--texto principal-->
+		<p>Faça agendamento de uma aula experimental grátis</p>
+
+		<form name="agendamento" action="" method="post">
+
+			<label id="nome">Nome:</label>
+			<input type="texto" name="nome" id="nome" placeholder="Nome completo" autofocus required size="60" maxlength="">
+
+			<label id="email" for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="nome@gmail.com" size="60">
+
+			<label id="celular" for="cel">Celular:</label>
+			<input type="number" name="celular" id="celular" placeholder="(XX) 91234-5678" size="60" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+
+			<div id="itens_dha">
+				<div class="dha">
+					<label for="data">Data</label>
+					<input type="date" name="data" size="">
+				</div>
+				<div class="dha">
+					<label for="hora">Hora</label>
+					<input type="time" name="hora">
+				</div>
+				<div>
+					<label for="aulas">Aulas</label>	
+					<input type="number" name="aulas" max="10" min="1" step="">
+				</div>
+			</div>	
+
+			<label id="genero">Gênero:</label>
+				<select name="genero" required>
+					<option value="">Selecione</option>
+					<option>Masculino</option>
+					<option>Feminino</option>
+				</select>
+
+			<label for="nivel">Nível</label>
+				<select>
+					<option>Selecione</option>
+					<option value="basico">Básico</option>
+					<option value="interm">Intermediário</option>
+					<option value="avancado">Avançado</option>
+				</select>
+
+			<fieldset>
+				<legend>Gênero</legend>
+				<input type="radio" name="genero" value="masc"><label for="genero">Masculino</label><br>
+				<input type="radio" name="genero" value="fem"><label for="genero">Feminino</label>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Atividades</legend>
+					<input type="checkbox" name="atividades" value="musculacao"> Musculação <br>
+					<input type="checkbox" name="atividades" value="robo"> Treino com robô <br>
+					<input type="checkbox" name="atividades" value="treino-professor"> Treino com professor <br>	
+					<input type="checkbox" name="atividades" value="jogo"> Jogo 
+				
+			</fieldset>
+
+			<label for="mensagem">Mensagem:</label>
+			<textarea name="mensagem" cols="50" rows="15">
+				
+			</textarea>
+			<div id="botoes">
+				<input type="submit" name="bt-enviar" value="enviar">
+				<input type="reset" name="bt-limpar" value="cancelar">
+			</div>
+
+		</form>
+	</section>
+
+		<footer>
+			<p id='rodape' class="centro">Desenvolvido por <a href="https://www.instagram.com/ojoao.martins/" target="_blank">João Alexandre Borges</a> - 2022</p>
+		</footer>
+		
+
+</body>

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.total {
+    width: 100%
+}
+
+nav {
+    width: 100%;
+    background-color: #E9D758;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a {
+    font: 1.3rem Inter;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu:link,
+.menu:visited {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.menu:active {
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #E9D758;
+}
+
+.menu:hover {
+    margin-right: 20px;
+    color: #950101;
+}
+
+h1 {
+    color: #950101;
+    font-size: 4rem;
+    text-align: center;
+    border-style: solid;
+    border-color: #950101;
+    border: 200;
+    padding: 40;
+}
+
+p {
+    color: #202020;
+    font-weight: 750;
+    font-family: 'inter', sans-serif;
+}
+
+#pag-horarios {
+    background-color: #FF8552;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'hahmlet', serif;
+    font-size: 40px;
+    color: #36558F;
+    margin: 0;
+    border: 5px;
+    border-style: double;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+#pag-horarios h2 {
+    color: aliceblue;
+    padding: 30;
+}
+
+ul {
+    margin-left: 40;
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+table,
+td,
+tr {
+    border: 1px solid #36558F;
+    text-align: center;
+}
+
+.img_da_tabela {
+    width: 100%;
+}
+
+img:hover {
+    border-style: solid;
+    border: 10px;
+    border-color: #36558F;
+}
+
+.direita {
+    text-align: right;
+}
+
+table {
+    border: 1;
+    width: 100%;
+}
+
+.logo {
+    width: 20px;
+}
+
+section,
+nav {
+    border-bottom: 5px solid #696969;
+}
+
+/*colorindo o site
+
+header{
+    background-color: aquamarine;
+}
+
+nav{
+    background-color: blueviolet;
+}
+
+article{
+    background-color: brown;
+}
+
+#pag-horarios{
+    background-color: gold;
+}
+
+#pag-materiais{
+    background-color: chartreuse
+}
+
+#pag-video{
+    background-color: darkred;
+}
+
+#rodape{
+    border: 100;
+    margin: 100;
+    padding: 100;
+    background-color: rgb(80, 80, 80);
+    color: aliceblue;
+}
+*/
+
+#btn-topo {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+#btn-topo img {
+    width: 80px;
+    height: 80px;
+}
+
+footer {
+    width: 100%;
+    background-color: #808080;
+    padding: 20px;
+}
+
+/*página de agendamentos*/
+
+#pag_agendamentos {
+    text-align: 0;
+
+}
+
+form {
+    background-color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+input,
+select,
+textarea,
+fieldset {
+    width: 100%;
+    margin-bottom: 10px;
+    font: 1.3rem roboto, sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+}
+
+label,
+legend {
+    font-family: roboto;
+}
+
+#itens_dha,
+#botoes {
+    display: flex;
+}
+
+.dha {
+    margin-right: 15px;
+}
+
+input[type="radio"],
+[type="checkbox"] {
+    width: 30px;
+    margin: 10 40px;
+}
+
+input[type="submit"],
+[type="reset"] {
+    margin: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
